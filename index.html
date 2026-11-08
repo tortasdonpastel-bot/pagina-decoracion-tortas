@@ -863,6 +863,7 @@ fbq('track', 'PageView');
 
   /* ---------- Pop-up de salida ---------- */
   var EXIT_KEY = 'deco_exit_shown';
+  var pageStart = Date.now();
   var popup = document.getElementById('exit-popup');
   if(popup){
     function openPopup(){
@@ -880,11 +881,11 @@ fbq('track', 'PageView');
     document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !popup.hidden) closePopup(); });
 
     document.addEventListener('mouseout', function(e){
-      if(!e.relatedTarget && e.clientY <= 0) openPopup();
+      if(!e.relatedTarget && e.clientY <= 0 && Date.now() - pageStart > 30000) openPopup();
     });
 
     var isTouch = matchMedia('(pointer:coarse)').matches;
-    if(isTouch){ setTimeout(openPopup, 45000); }
+    if(isTouch){ setTimeout(openPopup, 90000); }
   }
 
   /* ---------- Video: se reproduce en silencio cuando aparece en pantalla ---------- */
