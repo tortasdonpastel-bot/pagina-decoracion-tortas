@@ -149,6 +149,8 @@ fbq('track', 'PageView');
   .covers-duo .book-mockup{ position:absolute; width:58%; margin:0; }
   .covers-duo .book-mockup:first-child{ top:0; left:0; }
   .covers-duo .book-mockup:last-child{ bottom:0; right:4%; }
+  .book-mockup .cover img.cover-photo{ position:absolute; top:55%; left:29.5%; width:41%; height:auto; aspect-ratio:1; object-fit:cover; object-position:50% 15%; border:2px solid #fff; border-radius:8px; box-shadow:0 4px 10px rgba(46,22,32,.3); }
+  .covers-duo .book-mockup:first-child .cover img.cover-photo{ left:12.5%; }
 
   /* PROBLEM */
   .problem-list{ display:grid; gap:16px; margin-top:32px; max-width:640px; }
@@ -636,12 +638,12 @@ fbq('track', 'PageView');
         <div class="covers-duo">
           <div class="book-mockup">
             <div class="stack"></div>
-            <div class="cover"><img src="img/portada-buttercream.jpg" alt="Portada del módulo Decoración con Buttercream"></div>
+            <div class="cover"><img src="img/portada-buttercream.jpg" alt="Portada del módulo Decoración con Buttercream"><img class="cover-photo" src="img/carrusel/torta-01.jpg" alt=""></div>
             <div class="sheen"></div>
           </div>
           <div class="book-mockup">
             <div class="stack"></div>
-            <div class="cover"><img src="img/portada-ganacheado.jpg" alt="Portada del módulo Ganacheado y Forrado"></div>
+            <div class="cover"><img src="img/portada-ganacheado.jpg" alt="Portada del módulo Ganacheado y Forrado"><img class="cover-photo" src="img/carrusel/torta-02.jpg" alt=""></div>
             <div class="sheen"></div>
           </div>
         </div>
