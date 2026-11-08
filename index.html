@@ -123,7 +123,15 @@ fbq('track', 'PageView');
   .trust-item b{ color:var(--cream); }
   .check{ color:var(--caramel-light); font-weight:800; }
 
-  .hero-visual{ position:relative; display:flex; justify-content:center; }
+  .hero-visual{ position:relative; display:flex; justify-content:center; min-width:0; }
+
+  /* CARRUSEL DE TORTAS */
+  .cake-carousel{ width:100%; overflow:hidden; -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent); mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent); }
+  .cake-track{ display:flex; width:max-content; animation:cake-slide 70s linear infinite; }
+  .cake-track img{ flex:none; width:clamp(210px,24vw,270px); aspect-ratio:4/5; object-fit:cover; margin-right:14px; border-radius:16px; }
+  .cake-carousel:hover .cake-track{ animation-play-state:paused; }
+  @keyframes cake-slide{ from{ transform:translateX(-50%); } to{ transform:translateX(0); } }
+  @media (prefers-reduced-motion:reduce){ .cake-track{ animation:none; } .cake-carousel{ overflow-x:auto; } }
   .glow{ position:absolute; width:380px; height:380px; border-radius:50%; background:var(--blush); opacity:.14; filter:blur(4px); }
 
   /* BOOK MOCKUP */
@@ -383,17 +391,24 @@ fbq('track', 'PageView');
       </div>
     </div>
     <div class="hero-visual">
-      <div class="covers-duo">
-        <div class="book-mockup">
-          <div class="stack"></div>
-          <div class="cover"><img src="img/portada-buttercream.jpg" alt="Portada del módulo Decoración con Buttercream, de Tortas Don Pastel"></div>
-          <div class="sheen"></div>
-        </div>
-        <div class="book-mockup">
-          <div class="stack"></div>
-          <div class="cover"><img src="img/portada-ganacheado.jpg" alt="Portada del módulo Ganacheado y Forrado, de Tortas Don Pastel"></div>
-          <div class="sheen"></div>
-          <div class="tag">PDF + videos</div>
+      <div class="cake-carousel">
+        <div class="cake-track" id="cake-track">
+          <img src="img/carrusel/bc-playa.jpg" alt="Torta de buttercream con motivo de playa">
+          <img src="img/carrusel/gf-castillo.jpg" alt="Torta forrada con forma de castillo rosa">
+          <img src="img/carrusel/bc-frutillas.jpg" alt="Torta de buttercream con frutillas">
+          <img src="img/carrusel/gf-15.jpg" alt="Torta de dos pisos para 15 años con esferas de colores">
+          <img src="img/carrusel/bc-lego.jpg" alt="Torta de buttercream con muñequitos de bloques">
+          <img src="img/carrusel/gf-vaca.jpg" alt="Torta forrada con cara de vaquita">
+          <img src="img/carrusel/bc-roja.jpg" alt="Torta de buttercream roja decorada como sandía">
+          <img src="img/carrusel/gf-pirata.jpg" alt="Torta forrada con motivo de piratas">
+          <img src="img/carrusel/bc-comunion.jpg" alt="Torta de buttercream para comunión con flores y cruz">
+          <img src="img/carrusel/gf-globos.jpg" alt="Torta forrada con globos aerostáticos">
+          <img src="img/carrusel/bc-colores.jpg" alt="Torta de buttercream en colores con frutillas">
+          <img src="img/carrusel/gf-camiseta.jpg" alt="Torta forrada con forma de camiseta de fútbol">
+          <img src="img/carrusel/bc-80.jpg" alt="Torta de buttercream para 80 años con flores">
+          <img src="img/carrusel/gf-margaritas.jpg" alt="Torta forrada celeste con margaritas">
+          <img src="img/carrusel/gf-ositos.jpg" alt="Torta de dos pisos forrada con ositos">
+          <img src="img/carrusel/gf-basket.jpg" alt="Torta forrada con forma de pelota de básquet">
         </div>
       </div>
     </div>
@@ -886,6 +901,17 @@ fbq('track', 'PageView');
 
     var isTouch = matchMedia('(pointer:coarse)').matches;
     if(isTouch){ setTimeout(openPopup, 90000); }
+  }
+
+  /* ---------- Carrusel: duplica las fotos para que el movimiento no se corte ---------- */
+  var cakeTrack = document.getElementById('cake-track');
+  if(cakeTrack){
+    Array.prototype.slice.call(cakeTrack.children).forEach(function(img){
+      var copy = img.cloneNode(false);
+      copy.alt = '';
+      copy.setAttribute('aria-hidden', 'true');
+      cakeTrack.appendChild(copy);
+    });
   }
 
   /* ---------- Video: se reproduce en silencio cuando aparece en pantalla ---------- */
