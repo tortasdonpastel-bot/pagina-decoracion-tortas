@@ -168,6 +168,9 @@ fbq('track', 'PageView');
   .author-copy p{ margin-top:14px; color:var(--ink-soft); font-size:1.03rem; max-width:58ch; }
   .author-copy p:first-of-type{ margin-top:16px; }
   .cred-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+  .ig-badge{ display:inline-flex; width:1.5em; height:1.5em; margin-right:.4em; vertical-align:-.4em; border-radius:.42em; background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%); }
+  .ig-badge svg{ width:100%; height:100%; fill:none; stroke:#fff; stroke-width:1.3; }
+  .ig-badge .dot{ fill:#fff; stroke:none; }
   .cred{ background:var(--blush-soft); color:var(--maroon); font-size:.86rem; font-weight:600; padding:8px 14px; border-radius:99px; border:1px solid var(--blush); }
   .sig{ font-family:var(--font-script); font-size:1.6rem; color:var(--maroon); margin-top:18px; }
   @media (max-width:520px){ .author-badge{ left:10px; } }
@@ -442,7 +445,7 @@ fbq('track', 'PageView');
       <div class="cred-row">
         <span class="cred">🎓 Chef con título internacional</span>
         <span class="cred">📅 +20 años de trayectoria</span>
-        <a class="cred" href="https://www.instagram.com/tortasdonpastel?stkn=MTI4dGhxdmIzcGZreA==" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">📷 @tortasdonpastel</a>
+        <a class="cred" href="https://www.instagram.com/tortasdonpastel?stkn=MTI4dGhxdmIzcGZreA==" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ig-badge" aria-hidden="true"><svg viewBox="0 0 16 16"><rect x="2.5" y="2.5" width="11" height="11" rx="3.2"/><circle cx="8" cy="8" r="2.6"/><circle class="dot" cx="11.3" cy="4.7" r=".6"/></svg></span>@tortasdonpastel</a>
       </div>
       <div class="sig">Gi</div>
     </div>
@@ -776,7 +779,7 @@ fbq('track', 'PageView');
 <footer>
   <div class="wrap">
     <div class="brand">Tortas Don Pastel — Decoración de Tortas</div>
-    <div><a href="https://www.instagram.com/tortasdonpastel?stkn=MTI4dGhxdmIzcGZreA==" target="_blank" rel="noopener noreferrer" style="color:var(--cream); text-decoration:underline;">@tortasdonpastel</a> · Producto digital comercializado a través de Shopify</div>
+    <div><a href="https://www.instagram.com/tortasdonpastel?stkn=MTI4dGhxdmIzcGZreA==" target="_blank" rel="noopener noreferrer" style="color:var(--cream); text-decoration:underline;"><span class="ig-badge" aria-hidden="true"><svg viewBox="0 0 16 16"><rect x="2.5" y="2.5" width="11" height="11" rx="3.2"/><circle cx="8" cy="8" r="2.6"/><circle class="dot" cx="11.3" cy="4.7" r=".6"/></svg></span>@tortasdonpastel</a> · Producto digital comercializado a través de Shopify</div>
   </div>
 </footer>
 
