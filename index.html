@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decoración de Tortas</title>
+<meta name="description" content="Aprendé a decorar con buttercream y a ganachear y forrar tortas con bordes perfectos. Módulos en PDF + videos, con acceso a la comunidad de WhatsApp de Gi, de Tortas Don Pastel.">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1567196131803873');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,500..600&family=Work+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap">
+<style>
+  :root{
+    --maroon:#621A2E;
+    --maroon-deep:#440D1E;
+    --maroon-mid:#7A2740;
+    --blush:#F3DCDC;
+    --blush-soft:#F8E9E7;
+    --blush-text:#EBD0D0;
+    --cream:#FBF4EC;
+    --paper:#FFFDFB;
+    --caramel:#B87A3D;
+    --caramel-deep:#8F5C28;
+    --caramel-light:#E3B57C;
+    --ink:#2E1620;
+    --ink-soft:#6E4A55;
+    --line:#E7D3CE;
+    --sage:#5C7A5E;
+    --font-display:'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body:'Work Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    --font-script:'Caveat', cursive;
+    --h1: clamp(2.05rem, 1.55rem + 2.6vw, 3.3rem);
+    --h2: clamp(1.6rem, 1.3rem + 1.6vw, 2.35rem);
+    --h3: clamp(1.2rem, 1.08rem + .6vw, 1.45rem);
+  }
+
+  *{ box-sizing:border-box; }
+  :root{ scroll-behavior:smooth; color-scheme:light; }
+  body{ margin:0; background:var(--cream); color:var(--ink); font-family:var(--font-body); line-height:1.55; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,h4{ font-family:var(--font-display); color:var(--ink); text-wrap:balance; margin:0; line-height:1.08; }
+  p{ margin:0; }
+  img{ display:block; max-width:100%; }
+  a{ color:inherit; }
+  ul{ margin:0; padding:0; list-style:none; }
+  figure{ margin:0; }
+  .wrap{ max-width:1160px; margin:0 auto; padding-inline:clamp(20px,5vw,48px); }
+  .eyebrow{ font-family:var(--font-body); font-weight:700; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--caramel-deep); margin:0 0 10px; }
+  .eyebrow.on-maroon{ color:var(--caramel-light); }
+  .lede{ font-size:1.08rem; color:var(--ink-soft); max-width:62ch; margin-top:14px; }
+  .lede.on-maroon{ color:var(--blush-text); }
+  section{ position:relative; padding-block:clamp(56px,8vw,104px); }
+  .band-maroon{ background:var(--maroon); color:var(--blush-soft); }
+  .center{ text-align:center; margin-inline:auto; }
+
+  /* buttons */
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; font-family:var(--font-body); font-weight:700; font-size:1rem; padding:16px 30px; border-radius:8px; text-decoration:none; cursor:pointer; border:2px solid transparent; transition:transform .15s ease, box-shadow .15s ease, background-color .15s ease; }
+  .btn:focus-visible{ outline:3px solid var(--caramel-light); outline-offset:2px; }
+  .btn-primary{ background:var(--caramel); color:#2A1608; box-shadow:0 10px 24px -8px rgba(150,90,30,.55); }
+  .btn-primary:hover{ background:var(--caramel-deep); transform:translateY(-2px); box-shadow:0 14px 28px -8px rgba(150,90,30,.6); }
+  .btn-ghost{ background:transparent; border-color:var(--paper); color:var(--paper); }
+  .btn-ghost:hover{ background:rgba(255,255,255,.1); }
+  .btn-block{ width:100%; }
+
+  /* promo bar */
+  .sticky-stack{ position:sticky; top:0; z-index:40; }
+  .promo-bar{ background:var(--maroon-deep); color:var(--cream); }
+  .promo-bar .wrap{ display:flex; align-items:center; gap:18px; padding-block:9px; }
+  .promo-marquee{ flex:1; min-width:0; overflow:hidden; -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
+  .promo-track{ display:flex; width:max-content; gap:56px; animation:marquee 30s linear infinite; }
+  .promo-track span{ display:inline-flex; align-items:center; gap:8px; font-size:.85rem; font-weight:600; color:var(--blush-text); white-space:nowrap; }
+  @keyframes marquee{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+  .promo-timer{ flex:none; display:flex; align-items:center; gap:7px; font-size:.82rem; font-weight:700; color:var(--cream); background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.2); padding:6px 14px; border-radius:99px; white-space:nowrap; text-decoration:none; }
+  .promo-timer b{ font-variant-numeric:tabular-nums; color:var(--caramel-light); font-size:.95rem; letter-spacing:.02em; }
+  @media (prefers-reduced-motion:reduce){ .promo-track{ animation:none; } }
+  @media (max-width:640px){ .promo-timer .timer-label{ display:none; } }
+
+  /* value flag callout */
+  .value-flag{ display:flex; align-items:center; gap:10px; margin:20px auto 0; background:var(--blush-soft); color:var(--maroon); border:1px solid var(--blush); font-weight:700; font-size:.92rem; line-height:1.4; padding:12px 20px; border-radius:14px; max-width:fit-content; text-align:left; }
+
+  /* whatsapp floating button */
+  .wa-float{ position:fixed; right:18px; bottom:18px; z-index:50; width:58px; height:58px; border-radius:50%; background:#25D366; color:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px -6px rgba(0,0,0,.45); transition:transform .15s ease, box-shadow .15s ease; }
+  .wa-float:hover{ transform:scale(1.08); box-shadow:0 14px 28px -6px rgba(0,0,0,.5); }
+  .wa-float:focus-visible{ outline:3px solid var(--caramel-light); outline-offset:3px; }
+  .wa-float svg{ width:32px; height:32px; fill:currentColor; }
+
+  /* exit-intent popup */
+  .exit-overlay{ position:fixed; inset:0; background:rgba(46,22,32,.55); z-index:60; display:flex; align-items:center; justify-content:center; padding:20px; }
+  .exit-overlay[hidden]{ display:none; }
+  .exit-modal{ position:relative; background:var(--paper); border-radius:18px; padding:clamp(28px,5vw,40px); max-width:440px; width:100%; box-shadow:0 40px 80px -30px rgba(20,6,12,.5); text-align:center; }
+  .exit-modal .lede{ margin-inline:auto; }
+  .exit-modal .btn{ margin-top:22px; }
+  .exit-modal .fine-print{ margin-top:12px; }
+  .exit-close{ position:absolute; top:14px; right:14px; width:32px; height:32px; border-radius:50%; border:none; background:var(--blush-soft); color:var(--maroon); font-size:1rem; line-height:1; cursor:pointer; }
+  .exit-close:hover{ background:var(--blush); }
+
+  /* decorative leaf */
+  .leaf{ position:absolute; width:150px; height:150px; opacity:.35; pointer-events:none; }
+  .leaf.tr{ top:18px; right:0; transform:scaleX(-1); }
+  .leaf.bl{ bottom:0; left:0; }
+
+  /* HERO */
+  .hero{ background:radial-gradient(120% 140% at 88% -10%, var(--maroon-mid) 0%, var(--maroon) 45%, var(--maroon-deep) 100%); color:var(--blush-soft); overflow:hidden; padding-block:clamp(48px,7vw,88px); }
+  .hero .wrap{ display:grid; grid-template-columns:1fr; gap:44px; align-items:center; position:relative; z-index:2; }
+  .hero-kicker{ font-family:var(--font-body); font-weight:600; font-size:.95rem; color:var(--blush-text); background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); display:inline-block; padding:7px 14px; border-radius:99px; margin-bottom:22px; }
+  .hero h1{ color:var(--cream); font-weight:600; font-size:var(--h1); }
+  .hero-subtitle{ font-family:var(--font-display); font-weight:500; font-style:italic; font-size:1.2rem; color:var(--blush-text); margin-top:12px; max-width:46ch; }
+  .hero h1 em{ font-style:italic; color:var(--caramel-light); font-weight:500; }
+  .hero .lede{ color:var(--blush-text); font-size:1.14rem; max-width:56ch; }
+  .hero-ctas{ display:flex; flex-wrap:wrap; gap:14px; margin-top:30px; }
+  .trust-row{ display:flex; flex-wrap:wrap; gap:12px 26px; margin-top:38px; padding-top:28px; border-top:1px solid rgba(255,255,255,.16); }
+  .trust-item{ display:flex; align-items:center; gap:8px; font-size:.92rem; color:var(--blush-text); font-weight:500; }
+  .trust-item b{ color:var(--cream); }
+  .check{ color:var(--caramel-light); font-weight:800; }
+
+  .hero-visual{ position:relative; display:flex; justify-content:center; }
+  .glow{ position:absolute; width:380px; height:380px; border-radius:50%; background:var(--blush); opacity:.14; filter:blur(4px); }
+
+  /* BOOK MOCKUP */
+  .book-mockup{ position:relative; width:250px; aspect-ratio:3/4.3; margin-inline:auto; }
+  .book-mockup .stack{ position:absolute; inset:0; border-radius:5px 12px 12px 5px; background:linear-gradient(120deg,#f1e3d5,#e6d0b9); box-shadow:8px 10px 0 -3px #f2e6d9, 13px 17px 0 -3px #ecdbc6, 18px 24px 34px rgba(30,8,16,.4); transform:rotate(3deg); }
+  .book-mockup .cover{ position:absolute; inset:0; border-radius:5px 12px 12px 5px; overflow:hidden; transform:rotate(-2.2deg); box-shadow:2px 10px 30px rgba(20,6,12,.45); transition:transform .5s cubic-bezier(.2,.8,.2,1); }
+  .book-mockup .cover img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .book-mockup .cover::after{ content:''; position:absolute; inset:0; box-shadow:inset 4px 0 8px rgba(0,0,0,.35); }
+  .book-mockup .sheen{ position:absolute; inset:0; border-radius:5px 12px 12px 5px; background:linear-gradient(120deg, rgba(255,255,255,.28), rgba(255,255,255,0) 45%); transform:rotate(-2.2deg); pointer-events:none; }
+  @media (prefers-reduced-motion:no-preference){ .book-mockup:hover .cover, .book-mockup:hover .sheen{ transform:rotate(0deg) scale(1.035); } }
+  .book-mockup .tag{ position:absolute; bottom:-16px; right:-10px; background:var(--caramel); color:#2A1608; font-family:var(--font-display); font-weight:700; font-size:.85rem; padding:8px 14px; border-radius:99px; box-shadow:0 8px 18px -4px rgba(0,0,0,.4); transform:rotate(4deg); white-space:nowrap; z-index:2; }
+
+  /* two covers side by side */
+  .covers-duo{ position:relative; width:min(340px,100%); aspect-ratio:1/1.02; margin-inline:auto; }
+  .covers-duo .book-mockup{ position:absolute; width:58%; margin:0; }
+  .covers-duo .book-mockup:first-child{ top:0; left:0; }
+  .covers-duo .book-mockup:last-child{ bottom:0; right:4%; }
+
+  /* PROBLEM */
+  .problem-list{ display:grid; gap:16px; margin-top:32px; max-width:640px; }
+  .problem-item{ display:flex; gap:14px; align-items:flex-start; }
+  .x-mark{ flex:none; width:28px; height:28px; border-radius:50%; border:2px solid rgba(243,220,220,.5); display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--blush-text); font-size:.95rem; margin-top:2px; }
+  .problem-item p{ color:var(--blush-text); font-size:1.02rem; }
+  .problem-item b{ color:var(--cream); }
+  .bridge{ margin-top:38px; font-family:var(--font-display); font-size:1.35rem; font-style:italic; color:var(--cream); max-width:34ch; }
+
+  /* AUTHOR */
+  .author{ display:grid; grid-template-columns:1fr; gap:40px; align-items:center; }
+  .author-photo{ position:relative; }
+  .author-photo img{ border-radius:14px; width:100%; box-shadow:0 24px 50px -20px rgba(98,26,46,.4); }
+  .author-badge{ position:absolute; bottom:-18px; left:-18px; background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:12px 16px; box-shadow:0 12px 24px -10px rgba(46,22,32,.25); font-family:var(--font-display); font-size:.92rem; color:var(--maroon); font-weight:700; max-width:210px; }
+  .author-copy p{ margin-top:14px; color:var(--ink-soft); font-size:1.03rem; max-width:58ch; }
+  .author-copy p:first-of-type{ margin-top:16px; }
+  .cred-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+  .cred{ background:var(--blush-soft); color:var(--maroon); font-size:.86rem; font-weight:600; padding:8px 14px; border-radius:99px; border:1px solid var(--blush); }
+  .sig{ font-family:var(--font-script); font-size:1.6rem; color:var(--maroon); margin-top:18px; }
+  @media (max-width:520px){ .author-badge{ left:10px; } }
+
+  /* TIP CALLOUT */
+  .tip{ background:var(--blush-soft); border:1px solid var(--blush); border-left:4px solid var(--maroon); border-radius:4px 10px 10px 4px; padding:16px 20px; font-size:.96rem; color:var(--ink); }
+  .tip b{ color:var(--maroon); }
+
+  /* MODULES */
+  .section-head{ max-width:680px; margin-bottom:44px; }
+  .module-row{ display:grid; grid-template-columns:1fr; gap:28px; padding-block:40px; border-top:1px solid var(--line); align-items:start; }
+  .module-row:last-child{ border-bottom:1px solid var(--line); }
+  .module-row .thumb{ border-radius:12px; overflow:hidden; aspect-ratio:4/4.4; box-shadow:0 18px 34px -18px rgba(46,22,32,.35); }
+  .module-row .thumb img{ width:100%; height:100%; object-fit:cover; }
+  .module-num{ font-family:var(--font-display); font-size:.95rem; font-weight:700; color:var(--caramel-deep); letter-spacing:.06em; }
+  .module-row h3{ margin-top:6px; font-size:var(--h3); }
+  .module-row .desc{ margin-top:10px; color:var(--ink-soft); }
+  .module-bullets{ margin-top:16px; display:grid; gap:9px; }
+  .module-bullets li{ display:flex; gap:10px; font-size:.94rem; color:var(--ink); }
+  .module-bullets li::before{ content:'✓'; color:var(--sage); font-weight:800; flex:none; }
+  .module-price-tag{ margin-top:16px; font-size:.86rem; color:var(--ink-soft); }
+  .module-price-tag strong{ color:var(--maroon); font-family:var(--font-display); font-size:1.05rem; }
+  .mini-gallery{ display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:20px; }
+  .mini-gallery img{ width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:8px; }
+
+  /* PROCESS */
+  .process-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  .process-grid figure{ background:var(--paper); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .process-grid img{ width:100%; aspect-ratio:4/4.6; object-fit:cover; }
+  .process-grid figcaption{ padding:10px 12px 12px; font-size:.84rem; color:var(--ink-soft); line-height:1.4; }
+  .process-grid figcaption b{ color:var(--maroon); }
+  .process-note{ margin-top:22px; text-align:center; font-size:.95rem; color:var(--ink-soft); }
+  .process-note b{ color:var(--maroon); }
+
+  /* BONUSES */
+  .bonus-grid{ display:grid; grid-template-columns:1fr; gap:22px; }
+  .bonus-card{ background:var(--paper); border:1px solid var(--line); border-radius:12px; overflow:hidden; display:flex; flex-direction:column; }
+  .bonus-card .thumb{ aspect-ratio:16/9; overflow:hidden; }
+  .bonus-card .thumb img{ width:100%; height:100%; object-fit:cover; }
+  .bonus-card .thumb.duo{ display:grid; grid-template-columns:1fr 1fr; gap:4px; aspect-ratio:4/3; }
+  .bonus-card .thumb.duo img{ min-height:0; }
+  .bonus-card .body{ padding:22px; }
+  .bonus-pill{ display:inline-block; background:var(--maroon); color:var(--blush-soft); font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:5px 11px; border-radius:99px; margin-bottom:10px; }
+  .bonus-card p{ color:var(--ink-soft); margin-top:8px; font-size:.96rem; }
+  .bonus-value{ margin-top:14px; font-size:.9rem; color:var(--ink-soft); }
+  .bonus-value s{ opacity:.7; }
+  .bonus-value b{ color:var(--caramel-deep); }
+
+  /* VIDEO FEATURE */
+  .video-feature{ display:grid; grid-template-columns:1fr; gap:36px; align-items:center; }
+  .video-frame{ display:flex; justify-content:center; }
+  .video-frame .phone{ position:relative; width:min(300px,78vw); padding:12px 12px 20px; border-radius:34px; background:linear-gradient(165deg,var(--maroon-mid),var(--maroon-deep)); box-shadow:0 32px 60px -22px rgba(46,22,32,.5), inset 0 1px 0 rgba(255,255,255,.12); }
+  .video-frame .notch{ position:absolute; top:12px; left:50%; transform:translateX(-50%); width:64px; height:5px; border-radius:99px; background:rgba(255,255,255,.28); }
+  .video-frame video{ width:100%; aspect-ratio:9/16; object-fit:cover; border-radius:22px; display:block; background:#1a0a10; margin-top:14px; }
+  .video-copy .module-bullets li::before{ color:var(--caramel-deep); }
+  .unmute-btn{ position:absolute; left:50%; bottom:76px; transform:translateX(-50%); border:0; border-radius:99px; padding:10px 18px; background:rgba(26,10,16,.78); color:#fff; font:600 14px/1 'Work Sans',sans-serif; cursor:pointer; white-space:nowrap; box-shadow:0 6px 18px rgba(0,0,0,.3); }
+  .unmute-btn[hidden]{ display:none; }
+
+  /* TESTIMONIALS */
+  .testimonial{ max-width:680px; margin:40px auto 0; background:var(--blush-soft); border-left:4px solid var(--caramel); border-radius:14px; padding:26px 26px 22px; }
+  .testimonial img{ display:block; width:100%; max-width:420px; aspect-ratio:1/1; object-fit:cover; border-radius:10px; margin:0 0 16px; }
+  .testimonial blockquote{ margin:0; font-family:var(--font-display); font-size:1.12rem; line-height:1.55; color:var(--ink); }
+  .testimonial figcaption{ margin-top:14px; font-weight:700; color:var(--maroon); font-size:.92rem; }
+  .testimonial figcaption span{ font-weight:400; color:var(--ink-soft); }
+  .quote-mini{ margin-top:22px; padding:14px 16px; border-left:3px solid var(--caramel); background:var(--paper); border-radius:10px; font-size:.95rem; color:var(--ink); }
+  .quote-mini b{ display:block; margin-top:6px; font-size:.85rem; color:var(--maroon); }
+
+  /* PROOF GALLERY */
+  .proof-grid{ display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:repeat(3,190px); gap:14px; }
+  .gitem{ border-radius:12px; overflow:hidden; position:relative; }
+  .gitem img{ width:100%; height:100%; object-fit:cover; }
+  .g-big{ grid-column:span 2; grid-row:span 2; }
+  .g-tall{ grid-row:span 2; }
+
+  /* PRICING */
+  .pricing{ background:var(--cream); }
+  .offer-wrap{ display:grid; grid-template-columns:1fr; gap:40px; margin-top:44px; }
+  .offer-visual{ display:flex; flex-direction:column; align-items:center; gap:26px; padding-top:10px; }
+  .launch-badge{ background:var(--maroon); color:var(--blush-soft); font-weight:700; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; padding:9px 18px; border-radius:99px; }
+  .offer-includes{ display:grid; gap:9px; max-width:340px; }
+  .offer-includes li{ display:flex; gap:10px; font-size:.92rem; color:var(--ink); }
+  .offer-includes li::before{ content:'✓'; color:var(--sage); font-weight:800; flex:none; }
+  .stack-card{ background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:clamp(22px,4vw,40px); box-shadow:0 30px 60px -30px rgba(46,22,32,.35); }
+  .stack-card h3{ font-size:var(--h3); }
+  .stack-card .sub{ color:var(--ink-soft); margin-top:8px; font-size:.95rem; }
+
+  /* product options */
+  .options{ display:grid; gap:12px; margin-top:24px; border:0; padding:0; }
+  .opt{ position:relative; display:flex; gap:12px; align-items:flex-start; border:2px solid var(--line); border-radius:12px; padding:16px; cursor:pointer; background:var(--paper); transition:border-color .15s ease, background-color .15s ease; }
+  .opt:hover{ border-color:var(--caramel-light); }
+  .opt:has(input:checked){ border-color:var(--maroon); background:var(--blush-soft); }
+  .opt:has(input:focus-visible){ outline:3px solid var(--caramel-light); outline-offset:2px; }
+  .opt input{ margin-top:4px; width:19px; height:19px; accent-color:var(--maroon); flex:none; cursor:pointer; }
+  .opt-body{ flex:1; min-width:0; }
+  .opt-top{ display:flex; justify-content:space-between; align-items:baseline; gap:6px 12px; flex-wrap:wrap; }
+  .opt-name{ font-weight:700; color:var(--ink); font-size:1rem; line-height:1.3; }
+  .opt-price{ font-family:var(--font-display); font-weight:700; color:var(--maroon); font-size:1.35rem; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .opt-price s{ font-family:var(--font-body); font-size:.85rem; font-weight:500; color:var(--ink-soft); margin-right:6px; text-decoration-color:var(--caramel); }
+  .opt-desc{ font-size:.85rem; color:var(--ink-soft); margin-top:4px; line-height:1.45; }
+  .opt-gift{ display:block; margin-top:6px; font-size:.84rem; font-weight:700; color:var(--sage); }
+  .opt-badge{ position:absolute; top:-11px; right:14px; background:var(--caramel); color:#2A1608; font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; padding:4px 10px; border-radius:99px; }
+
+  .stack-offer{ display:flex; justify-content:space-between; align-items:baseline; margin-top:22px; background:var(--blush-soft); border-radius:10px; padding:18px 20px; gap:12px; }
+  .stack-offer span:first-child{ color:var(--maroon); font-weight:700; }
+  .offer-price{ font-family:var(--font-display); font-size:clamp(2rem,3vw,2.6rem); font-weight:700; color:var(--maroon); font-variant-numeric:tabular-nums; }
+  .offer-price small{ font-family:var(--font-body); font-size:.9rem; font-weight:600; color:var(--ink-soft); }
+  .save-note{ text-align:center; margin-top:16px; font-size:.92rem; color:var(--sage); font-weight:600; }
+  .save-note[hidden]{ display:none; }
+
+  /* bump offers */
+  .bump-offers{ margin-top:24px; padding-top:20px; border-top:1px dashed var(--line); display:grid; gap:12px; }
+  .bump-lead{ font-size:.78rem; font-weight:700; color:var(--ink-soft); text-transform:uppercase; letter-spacing:.06em; margin:0; }
+  .bump-item{ display:flex; align-items:flex-start; gap:12px; background:var(--blush-soft); border:2px dashed var(--caramel); border-radius:12px; padding:14px; cursor:pointer; transition:border-color .15s ease, background-color .15s ease; }
+  .bump-item:has(.bump-check:checked){ border-style:solid; border-color:var(--caramel-deep); background:var(--blush); }
+  .bump-check{ margin-top:3px; width:19px; height:19px; accent-color:var(--maroon); flex:none; cursor:pointer; }
+  .bump-body{ flex:1; display:flex; flex-direction:column; gap:5px; min-width:0; }
+  .bump-title{ font-weight:700; color:var(--maroon); font-size:.92rem; line-height:1.35; }
+  .bump-desc{ font-size:.8rem; color:var(--ink-soft); line-height:1.45; }
+  .bump-total-note{ text-align:center; font-size:.88rem; color:var(--ink-soft); margin:0; }
+  .bump-total-note b{ color:var(--maroon); }
+  .stack-card .btn{ margin-top:22px; }
+  .fine-print{ text-align:center; font-size:.8rem; color:var(--ink-soft); margin-top:12px; }
+
+  /* FAQ */
+  .faq-list{ max-width:760px; margin-top:36px; display:grid; gap:12px; }
+  details{ background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:6px 22px; }
+  summary{ list-style:none; cursor:pointer; padding-block:16px; font-family:var(--font-display); font-weight:600; font-size:1.02rem; color:var(--ink); display:flex; justify-content:space-between; align-items:center; gap:16px; }
+  summary::-webkit-details-marker{ display:none; }
+  .chev{ flex:none; width:22px; height:22px; border-radius:50%; border:1.5px solid var(--maroon); position:relative; transition:transform .25s ease; }
+  .chev::before,.chev::after{ content:''; position:absolute; background:var(--maroon); }
+  .chev::before{ width:10px; height:2px; top:50%; left:50%; transform:translate(-50%,-50%); }
+  .chev::after{ width:2px; height:10px; top:50%; left:50%; transform:translate(-50%,-50%); transition:opacity .2s ease; }
+  details[open] .chev::after{ opacity:0; }
+  details[open] .chev{ transform:rotate(180deg); }
+  .faq-a{ color:var(--ink-soft); padding-bottom:20px; font-size:.96rem; max-width:64ch; }
+
+  /* FINAL CTA */
+  .final-cta{ text-align:center; }
+  .final-cta h2{ color:var(--cream); font-size:clamp(1.7rem,1.3rem+2vw,2.6rem); max-width:20ch; margin-inline:auto; }
+  .final-cta .lede{ margin-inline:auto; margin-top:16px; }
+  .final-cta .btn{ margin-top:30px; }
+  .final-cta .fine-print{ color:var(--blush-text); margin-top:16px; }
+
+  footer{ background:var(--maroon-deep); color:var(--blush-text); padding-block:36px; }
+  footer .wrap{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; align-items:center; font-size:.86rem; }
+  footer .brand{ font-family:var(--font-display); font-weight:700; font-size:1.1rem; color:var(--blush-soft); }
+
+  @media (min-width:860px){
+    .hero .wrap{ grid-template-columns:1.05fr .95fr; }
+    .author{ grid-template-columns:.85fr 1.15fr; }
+    .video-feature{ grid-template-columns:1fr .85fr; }
+    .bonus-grid{ grid-template-columns:1fr 1fr; }
+    .bonus-card.is-wide{ grid-column:1 / -1; display:grid; grid-template-columns:1fr 1fr; }
+    .bonus-card.is-wide .thumb{ aspect-ratio:auto; height:100%; }
+    .bonus-card.is-wide .body{ padding:clamp(24px,3vw,40px); align-self:center; }
+    .module-row{ grid-template-columns:.9fr 1.3fr; }
+    .module-row:nth-child(even) .thumb{ order:2; }
+    .offer-wrap{ grid-template-columns:.85fr 1.15fr; align-items:start; }
+    .process-grid{ grid-template-columns:repeat(3,1fr); }
+  }
+  @media (max-width:720px){
+    .proof-grid{ grid-template-columns:repeat(2,1fr); grid-template-rows:none; grid-auto-rows:150px; }
+    .g-big{ grid-column:span 2; grid-row:span 1; }
+    .g-tall{ grid-row:span 1; }
+    .g-last{ grid-column:span 2; }
+  }
+</style>
+</head>
+<body>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1567196131803873&ev=PageView&noscript=1" alt=""/></noscript>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="leaf-motif" viewBox="0 0 200 200">
+    <path d="M24 178 C 46 132, 62 118, 104 54" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="72" cy="112" rx="16" ry="8" transform="rotate(-42 72 112)" fill="currentColor" opacity=".55"/>
+    <ellipse cx="93" cy="86" rx="15" ry="7.5" transform="rotate(-42 93 86)" fill="currentColor" opacity=".55"/>
+    <ellipse cx="55" cy="138" rx="14" ry="7" transform="rotate(-42 55 138)" fill="currentColor" opacity=".55"/>
+  </symbol>
+</svg>
+
+<div class="sticky-stack">
+  <div class="promo-bar">
+    <div class="wrap">
+      <div class="promo-marquee">
+        <div class="promo-track">
+          <span>🎥 PDF + videos donde me ves haciendo cada paso</span>
+          <span>💬 Acceso a mi comunidad de WhatsApp incluido</span>
+          <span>👩‍🍳 Más de 20 años decorando tortas en Tortas Don Pastel</span>
+          <span>🧁 Llevando los dos módulos, te regalo Cookies y Cupcakes Decorados</span>
+          <span>🔒 Compra 100% segura, procesada por Shopify</span>
+          <span>🎥 PDF + videos donde me ves haciendo cada paso</span>
+          <span>💬 Acceso a mi comunidad de WhatsApp incluido</span>
+          <span>👩‍🍳 Más de 20 años decorando tortas en Tortas Don Pastel</span>
+          <span>🧁 Llevando los dos módulos, te regalo Cookies y Cupcakes Decorados</span>
+          <span>🔒 Compra 100% segura, procesada por Shopify</span>
+        </div>
+      </div>
+      <a class="promo-timer" href="#precios">
+        <span aria-hidden="true">🏷️</span><span class="timer-label">Promo 2 módulos</span> <b data-price="promo">$ —</b>
+      </a>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+  <svg class="leaf tr" style="color:var(--blush)"><use href="#leaf-motif"></use></svg>
+  <div class="glow" style="top:-60px; right:-60px;"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="hero-kicker">2 módulos de decoración · PDF + videos · Paso a paso</span>
+      <h1>Aprendé a decorar tortas <em>de forma práctica</em> en solo 7 días.</h1>
+      <p class="hero-subtitle">Buttercream con colores intensos, ganache con bordes rectos y forrado sin arrugas.</p>
+      <p class="lede">Te muestro cómo lo hago yo en <em style="font-style:italic;color:var(--caramel-light)">Tortas Don Pastel</em> hace más de 20 años: con ingredientes de supermercado, los materiales que uso en mi cocina y todos mis trucos.</p>
+      <p class="lede" style="margin-top:10px; font-size:.98rem;">Es para vos si tus tortas ya son ricas, pero te cuesta que se vean prolijas: el buttercream se corta, los colores quedan grises o la pasta te queda con arrugas y los bordes redondeados.</p>
+      <div class="hero-ctas">
+        <a href="#precios" class="btn btn-primary">Quiero aprender a decorar</a>
+        <a href="#modulos" class="btn btn-ghost">Ver qué incluye</a>
+      </div>
+      <div class="trust-row">
+        <div class="trust-item"><span class="check">✓</span> <b>+20 años</b>&nbsp;de trayectoria</div>
+        <div class="trust-item"><span class="check">✓</span> PDF + <b>videos explicativos</b></div>
+        <div class="trust-item"><span class="check">✓</span> <b>Comunidad de WhatsApp</b>&nbsp;incluida</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="covers-duo">
+        <div class="book-mockup">
+          <div class="stack"></div>
+          <div class="cover"><img src="img/portada-buttercream.jpg" alt="Portada del módulo Decoración con Buttercream, de Tortas Don Pastel"></div>
+          <div class="sheen"></div>
+        </div>
+        <div class="book-mockup">
+          <div class="stack"></div>
+          <div class="cover"><img src="img/portada-ganacheado.jpg" alt="Portada del módulo Ganacheado y Forrado, de Tortas Don Pastel"></div>
+          <div class="sheen"></div>
+          <div class="tag">PDF + videos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-maroon">
+  <div class="wrap" style="max-width:820px;">
+    <p class="eyebrow on-maroon">Antes de arrancar</p>
+    <h2 style="color:var(--cream); font-size:var(--h2);">Si te pasa esto, no sos la única</h2>
+    <div class="problem-list">
+      <div class="problem-item"><span class="x-mark">✕</span><p><b>El buttercream se te corta</b> y no sabés si seguir batiendo o tirarlo todo.</p></div>
+      <div class="problem-item"><span class="x-mark">✕</span><p><b>Buscás un rojo, un azul o un negro intenso</b> y te queda rosa, celeste o gris.</p></div>
+      <div class="problem-item"><span class="x-mark">✕</span><p><b>Forrás con pasta y te quedan arrugas, burbujas</b> y los bordes redondeados.</p></div>
+      <div class="problem-item"><span class="x-mark">✕</span><p><b>Rechazás pedidos de tortas temáticas</b> porque todavía no te animás a forrar.</p></div>
+    </div>
+    <p class="bridge">No es falta de mano. Es que nadie te mostró los trucos — y la decoración es lo que hace que una torta se pueda cobrar bien.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap author">
+    <div class="author-photo">
+      <img src="img/gi.jpg" alt="Gi, de Tortas Don Pastel, decorando una torta con flores naturales en su cocina">
+      <div class="author-badge">"La primera torta forrada no va a salir perfecta, y está bien. En pocas tortas le agarrás la mano."</div>
+    </div>
+    <div class="author-copy">
+      <p class="eyebrow">Quién te lo enseña</p>
+      <h2 style="font-size:var(--h2);">Soy Gi, de Tortas Don Pastel</h2>
+      <p>Hace más de 20 años que hago tortas en mi casa. Empecé como muchas: con tortas sencillas para mesas dulces, probando, equivocándome y volviendo a probar. Con el tiempo fui aprendiendo a decorar.</p>
+      <p>Durante mucho tiempo pensé que las tortas forradas, lisas y con los bordes bien rectos, eran imposibles de hacer en casa. No lo son: son mucho más fáciles de lo que parecen cuando conocés la técnica.</p>
+      <p>En estos módulos te muestro cómo lo hago yo, paso a paso, tal cual lo hago en mi cocina. Sin vueltas y con ingredientes que conseguís en cualquier supermercado.</p>
+      <div class="cred-row">
+        <span class="cred">🎓 Chef con título internacional</span>
+        <span class="cred">📅 +20 años de trayectoria</span>
+        <a class="cred" href="https://www.instagram.com/tortasdonpastel?stkn=MTI4dGhxdmIzcGZreA==" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">📷 @tortasdonpastel</a>
+      </div>
+      <div class="sig">Gi</div>
+    </div>
+  </div>
+</section>
+
+<section id="modulos" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">El contenido</p>
+      <h2>Dos módulos que podés llevar por separado</h2>
+      <p class="lede">Elegí el que necesites, o llevá los dos con precio promocional. Cada módulo es un PDF con las cantidades y los trucos para consultar rápido, más videos explicativos donde me ves haciendo todo.</p>
+    </div>
+
+    <div class="module-row">
+      <div class="thumb"><img src="img/bc-colores.jpg" alt="Torta cubierta con buttercream en franjas blanca, naranja y fucsia, decorada con frutillas y rosetas"></div>
+      <div>
+        <p class="module-num">MÓDULO · DECORACIÓN</p>
+        <h3>Decoración con Buttercream</h3>
+        <p class="desc">Queda suave y sedoso, se tiñe del color que quieras y con una manga hacés decoraciones hermosas. Y no es difícil: solo hay que conocer los trucos.</p>
+        <ul class="module-bullets">
+          <li>Buttercream desde cero: mi receta con merengue italiano, la prueba de la "bolita blanda" y una tabla para saber cuánto preparar según la torta</li>
+          <li>Qué hacer si se corta (casi siempre es la temperatura) y cómo conservarlo hasta 3 meses</li>
+          <li>Cómo teñirlo: colores suaves y los 2 trucos para lograr rojo, azul y negro intensos</li>
+          <li>Decoración con manga: qué picos comprar, cómo cargarla y sostenerla, y 15 decoraciones con el pico justo para cada una</li>
+        </ul>
+        <div class="tip" style="margin-top:18px;"><b>Tip de Gi:</b> "Si vas a comprar un solo pico para arrancar, que sea el rizado cerrado grande. Es el que más uso."</div>
+        <div class="mini-gallery">
+          <img src="img/bc-lego.jpg" alt="Torta de buttercream con muñequitos y rosetas de colores" loading="lazy">
+          <img src="img/bc-peludo.jpg" alt="Torta cuadrada con textura de pelito hecha con manga" loading="lazy">
+          <img src="img/bc-playa.jpg" alt="Torta con degradé de azules simulando el mar" loading="lazy">
+          <img src="img/bc-frutillas.jpg" alt="Torta con bordes de conchitas de buttercream y frutillas" loading="lazy">
+        </div>
+        <p class="module-price-tag">Precio del módulo: <strong data-price="buttercream">$ —</strong> · incluye la comunidad de WhatsApp</p>
+      </div>
+    </div>
+
+    <div class="module-row">
+      <div class="thumb"><img src="img/gf-globos.jpg" alt="Torta forrada celeste con globos aerostáticos y nubes de pasta"></div>
+      <div>
+        <p class="module-num">MÓDULO · DECORACIÓN</p>
+        <h3>Ganacheado y Forrado</h3>
+        <p class="desc">El secreto de una torta forrada perfecta no está solo en la pasta, sino en lo que va debajo: el ganache. Por eso este módulo tiene dos partes que van juntas, una detrás de la otra.</p>
+        <ul class="module-bullets">
+          <li>Ganache: la proporción exacta, qué chocolate y qué crema usar, y el punto justo para trabajarlo</li>
+          <li>Ganacheado en dos capas, para lograr una torta lisa, firme y con bordes rectos</li>
+          <li>Cómo teñir la pasta, cuánta usar y cómo estirarla pareja (con el truco de los palitos de brochette)</li>
+          <li>Mi técnica de forrado paso a paso —tapa, tira, unión y vuelta— con muy poco margen de error</li>
+          <li>CMC para días de humedad y figuras paradas, y cómo hacer adornos impresos</li>
+        </ul>
+        <div class="tip" style="margin-top:18px;"><b>Tip de Gi:</b> "Si el ganache está bien firme, podés alisar con fuerza sin que a la torta le pase nada, y se borran todas las marcas."</div>
+        <div class="mini-gallery">
+          <img src="img/gf-castillo.jpg" alt="Torta castillo forrada en blanco y rosa" loading="lazy">
+          <img src="img/gf-camiseta.jpg" alt="Torta con forma de camiseta argentina número 10" loading="lazy">
+          <img src="img/gf-basket.jpg" alt="Torta pelota de básquet forrada en naranja con red" loading="lazy">
+          <img src="img/gf-margaritas.jpg" alt="Torta forrada turquesa con margaritas" loading="lazy">
+        </div>
+        <p class="module-price-tag">Precio del módulo: <strong data-price="ganacheado">$ —</strong> · incluye la comunidad de WhatsApp</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--blush-soft);">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Por dentro de los módulos</p>
+      <h2>Así se ve el paso a paso</h2>
+      <p class="lede">Fotos reales de mi cocina, tal cual aparecen en los PDF. Nada de fotos de catálogo.</p>
+    </div>
+    <div class="process-grid">
+      <figure><img src="img/bc-negro-antes.jpg" alt="Buttercream con colorante negro que todavía se ve gris" loading="lazy"><figcaption><b>Antes:</b> con colorante y batido, el negro queda gris.</figcaption></figure>
+      <figure><img src="img/bc-negro-despues.jpg" alt="Buttercream negro intenso después de mixearlo" loading="lazy"><figcaption><b>Después:</b> con mi truco, ¡negro intenso!</figcaption></figure>
+      <figure><img src="img/bc-picos.jpg" alt="Distintos picos de manga: lisos, rizados, de hoja y de pétalo" loading="lazy"><figcaption>Los picos que uso y <b>qué decoración</b> sale con cada uno.</figcaption></figure>
+      <figure><img src="img/gf-ganacheada.jpg" alt="Torta ganacheada con chocolate, lisa y con bordes rectos" loading="lazy"><figcaption>Torta ganacheada, <b>con bordes rectos</b> y lista para forrar.</figcaption></figure>
+      <figure><img src="img/gf-tira.jpg" alt="Manos colocando la tira de pasta alrededor de la torta" loading="lazy"><figcaption>Colocando la tira del costado, <b>sin arrugas</b>.</figcaption></figure>
+      <figure><img src="img/gf-forrada.jpg" alt="Torta forrada en blanco terminada, lisa y con bordes rectos" loading="lazy"><figcaption>Torta forrada terminada: <b>lisa y prolija</b>.</figcaption></figure>
+    </div>
+    <p class="process-note">Y en los <b>videos</b> me ves haciendo cada uno de estos pasos.</p>
+  </div>
+</section>
+
+<section style="background:var(--paper);">
+  <div class="wrap video-feature">
+    <div class="video-copy">
+      <p class="eyebrow">Mirá cómo trabajo</p>
+      <h2>Una guía paso a paso, y no vas a estar sola</h2>
+      <p class="lede">Sin viajar, sin horarios y sin perderte clases: aprendés a tu ritmo con las técnicas que uso hace más de 20 años en mi pastelería, y yo te acompaño en todo el proceso.</p>
+      <ul class="module-bullets" style="margin-top:20px;">
+        <li>Me mandás fotos y consultás tus dudas por WhatsApp</li>
+        <li>Si lo necesitás, hacemos una videollamada</li>
+      </ul>
+      <p class="quote-mini">"Te escribí, te mandé un audio y me respondiste… no tenés la obligación y sin embargo lo hacés."<b>Carmen · Tucumán</b></p>
+    </div>
+    <div class="video-frame">
+      <div class="phone">
+        <span class="notch"></span>
+        <video id="sales-video" controls muted loop playsinline preload="none" poster="img/video-poster-ventas.jpg">
+          <source src="videos/video-ventas.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="unmute-btn" id="unmute-btn">🔊 Tocá para escuchar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--blush-soft);">
+  <div class="wrap">
+    <div class="section-head center" style="max-width:640px;margin-inline:auto;">
+      <p class="eyebrow" style="text-align:center;">Lo que dicen las que ya aprendieron conmigo</p>
+      <h2>Muchas arrancaron sin experiencia</h2>
+    </div>
+    <figure class="testimonial" style="margin-top:16px; background:var(--paper);">
+      <img src="img/yenhy.jpg" alt="Torta cubierta con crema y ganache de chocolate, hecha por Yenhy con las recetas de la guía" loading="lazy">
+      <blockquote>"Tu PDF me encantó en todo sentido, ¡tiene hasta tips tuyos que son súper útiles! No tuve tiempo de hacer todo, pero me sirvió muchísimo con los rellenos y las coberturas, como el ganache. Nunca me salían tan prolijas las tortas, pero gracias a tus rellenos y al ganache salieron perfectas 💕"</blockquote>
+      <figcaption>Yenhy <span>· Buenos Aires</span></figcaption>
+    </figure>
+    <figure class="testimonial" style="margin-top:16px; background:var(--paper);">
+      <blockquote>"Hace unos meses compré un PDF de otra persona, hice todos los pasos y la receta nunca me salió. Le escribí y nunca más me respondió. Vos en cambio me respondiste, y eso habla muy bien de vos: no tenés la obligación y sin embargo lo hacés. Me encantan tus recetas. Gracias por no dudar en responder y enseñarnos lo que sabés 💛"</blockquote>
+      <figcaption>Carmen <span>· Tucumán</span></figcaption>
+    </figure>
+    <figure class="testimonial" style="margin-top:16px; background:var(--paper);">
+      <blockquote>"Les gustó mucho la torta. Gracias por la receta, explicada súper clara 💛"</blockquote>
+      <figcaption>Cinthia <span>· Comodoro Rivadavia</span></figcaption>
+    </figure>
+    <figure class="testimonial" style="margin-top:16px; background:var(--paper);">
+      <blockquote>"Sos una genia, Gisela. Me llegó todo, y desde el principio en el grupo nos respondés a todas. ¡Gracias! 💛"</blockquote>
+      <figcaption>Mabe <span>· Buenos Aires</span></figcaption>
+    </figure>
+    <figure class="testimonial" style="margin-top:16px; background:var(--paper);">
+      <blockquote>"Lo compré el finde pasado. El material está buenísimo, y en el grupo están pasando recetas que estoy aprovechando al máximo. Una genia. ¡Gracias! 💛"</blockquote>
+      <figcaption>Carina <span>· Córdoba Capital</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section style="background:var(--paper);">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Regalo exclusivo</p>
+      <h2>Y si llevás los dos módulos, te regalo un bono</h2>
+      <p class="lede">Este bono no se vende por separado — es exclusivo para quienes llevan la promo de los dos módulos.</p>
+    </div>
+    <div class="bonus-grid">
+      <div class="bonus-card is-wide">
+        <div class="thumb duo">
+          <img src="img/bono-cookies.jpg" alt="Cookies decoradas con fondant de colores en forma de arcoíris" loading="lazy">
+          <img src="img/bono-cupcakes.jpg" alt="Cupcakes con rosetones de merengue de colores y toppers" loading="lazy">
+        </div>
+        <div class="body">
+          <span class="bonus-pill">Bono</span>
+          <h3 style="font-size:1.15rem;">Cookies y Cupcakes Decorados</h3>
+          <p>Masa base para cookies que no se deforma al hornear, más 2 técnicas fáciles de decoración (fondant y merengue) para armar mesas dulces a juego.</p>
+          <p class="bonus-value">Valor si se vendiera solo: <s>$3.900</s> <b>Incluido sin cargo con la promo</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--blush-soft);">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Resultados reales</p>
+      <h2>Esto es lo que vas a poder hacer</h2>
+      <p class="lede">Tortas reales de Tortas Don Pastel, hechas con las mismas técnicas que te enseño en estos módulos.</p>
+    </div>
+    <div class="proof-grid">
+      <div class="gitem g-big"><img src="img/bc-roja.jpg" alt="Torta fucsia de buttercream con bordes de conchitas y moños negros" loading="lazy"></div>
+      <div class="gitem g-tall"><img src="img/gf-15.jpg" alt="Torta de dos pisos forrada en negro con estrellas y esferas flúor para 15 años" loading="lazy"></div>
+      <div class="gitem"><img src="img/gf-pirata.jpg" alt="Torta forrada celeste con calavera pirata y arena" loading="lazy"></div>
+      <div class="gitem"><img src="img/bc-80.jpg" alt="Torta de buttercream con flores rosadas y número 80" loading="lazy"></div>
+      <div class="gitem"><img src="img/gf-vaca.jpg" alt="Torta forrada con cara de vaquita y nombre" loading="lazy"></div>
+      <div class="gitem"><img src="img/bc-comunion.jpg" alt="Torta de buttercream blanca con flores doradas y cruz" loading="lazy"></div>
+      <div class="gitem"><img src="img/gf-ositos.jpg" alt="Torta de dos pisos forrada en blanco y celeste con ositos" loading="lazy"></div>
+      <div class="gitem g-last"><img src="img/bc-azul.jpg" alt="Gi cubriendo una torta con buttercream azul intenso" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="precios" class="pricing">
+  <div class="wrap">
+    <div class="section-head center" style="max-width:640px;">
+      <p class="eyebrow" style="text-align:center;">La inversión</p>
+      <h2>Elegí cómo empezar</h2>
+      <p class="lede center">Llevá un módulo, o los dos con precio promocional y un bono de regalo.</p>
+      <p class="value-flag" style="margin-left:auto; margin-right:auto;">💡 Una torta forrada o decorada con manga se cobra mucho más que una torta simple. Con la primera que vendas, ya recuperaste lo que invertiste.</p>
+    </div>
+
+    <div class="offer-wrap">
+      <div class="offer-visual">
+        <span class="launch-badge">PDF + videos + comunidad</span>
+        <div class="covers-duo">
+          <div class="book-mockup">
+            <div class="stack"></div>
+            <div class="cover"><img src="img/portada-buttercream.jpg" alt="Portada del módulo Decoración con Buttercream"></div>
+            <div class="sheen"></div>
+          </div>
+          <div class="book-mockup">
+            <div class="stack"></div>
+            <div class="cover"><img src="img/portada-ganacheado.jpg" alt="Portada del módulo Ganacheado y Forrado"></div>
+            <div class="sheen"></div>
+          </div>
+        </div>
+        <ul class="offer-includes">
+          <li>PDF con cantidades, pasos y trucos</li>
+          <li>Videos explicativos de cada técnica</li>
+          <li>Acceso a mi grupo de WhatsApp</li>
+          <li>Consultas por WhatsApp y videollamada si la necesitás</li>
+        </ul>
+      </div>
+
+      <div class="stack-card">
+        <h3>Elegí tu opción</h3>
+        <p class="sub">Todas incluyen el PDF, los videos y el acceso a mi comunidad de WhatsApp.</p>
+
+        <fieldset class="options">
+          <legend class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Opción de compra</legend>
+          <label class="opt">
+            <input type="radio" name="product" value="promo" checked>
+            <span class="opt-body">
+              <span class="opt-top">
+                <span class="opt-name">Promo: los dos módulos</span>
+                <span class="opt-price"><s data-price="sum">$ —</s><span data-price="promo">$ —</span></span>
+              </span>
+              <span class="opt-desc">Decoración con Buttercream + Ganacheado y Forrado.</span>
+              <span class="opt-gift">🎁 + Bono Cookies y Cupcakes Decorados (valor $3.900)</span>
+            </span>
+            <span class="opt-badge">Mejor precio</span>
+          </label>
+          <label class="opt">
+            <input type="radio" name="product" value="buttercream">
+            <span class="opt-body">
+              <span class="opt-top">
+                <span class="opt-name">Decoración con Buttercream</span>
+                <span class="opt-price" data-price="buttercream">$ —</span>
+              </span>
+              <span class="opt-desc">Receta desde cero, colores intensos y decoración con manga.</span>
+            </span>
+          </label>
+          <label class="opt">
+            <input type="radio" name="product" value="ganacheado">
+            <span class="opt-body">
+              <span class="opt-top">
+                <span class="opt-name">Ganacheado y Forrado</span>
+                <span class="opt-price" data-price="ganacheado">$ —</span>
+              </span>
+              <span class="opt-desc">Ganache paso a paso, forrado con pasta y bordes perfectos.</span>
+            </span>
+          </label>
+        </fieldset>
+
+        <div class="stack-offer">
+          <span>Hoy pagás</span>
+          <span class="offer-price"><span id="offer-total">$ —</span> <small>ARS</small></span>
+        </div>
+        <p class="save-note" id="save-note">Ahorrás <span data-price="save">$ —</span> · pago único · acceso inmediato</p>
+        <a href="#precios" id="main-buy-btn" class="btn btn-primary btn-block">Comprar ahora</a>
+        <p class="fine-print">Compra 100% segura, procesada por Shopify. Te llega todo por mail, junto con el acceso al grupo de WhatsApp.</p>
+
+        <div class="bump-offers">
+          <p class="bump-lead">Sumá extras antes de pagar (opcional)</p>
+          <label class="bump-item">
+            <input type="checkbox" class="bump-check" value="redes">
+            <span class="bump-body">
+              <span class="bump-title">✅ ¡SÍ, quiero sumar Redes para Reposteras por solo <span data-price="redes">$ —</span>!</span>
+              <span class="bump-desc">Vendé tus tortas desde el celular con Instagram y Facebook: perfil profesional con link a WhatsApp, grupos de tu zona y Marketplace, 6 trucos para que tus fotos luzcan, los 5 tipos de contenido que venden, un calendario de 30 días con los textos listos para copiar, cómo pasar del "¿precio?" al pedido confirmado y una rutina semanal para imprimir. Solo disponible en esta compra.</span>
+            </span>
+          </label>
+          <label class="bump-item">
+            <input type="checkbox" class="bump-check" value="tortas">
+            <span class="bump-body">
+              <span class="bump-title">✅ ¡SÍ, quiero sumar el Módulo Tortas Decoradas: Bizcochuelo, Rellenos y Coberturas por solo <span data-price="tortas">$ —</span>!</span>
+              <span class="bump-desc">Lo que va debajo de la decoración: bizcochuelo clásico (vainilla, chocolate y variantes) y bizcochuelo de manteca para tortas talladas, 6 rellenos y coberturas que se reciclan entre sí (chantilly, pastelera, dulce de leche y crema, ganache y glasé), el armado de la torta y una torta de nuez sin TACC. Solo disponible en esta compra.</span>
+            </span>
+          </label>
+          <p class="bump-total-note" id="bump-total-note" hidden>Total con los extras seleccionados: <b id="bump-total-value">$ —</b></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section style="background:var(--paper);">
+  <div class="wrap" style="max-width:820px;">
+    <div class="section-head">
+      <p class="eyebrow">Dudas frecuentes</p>
+      <h2>Antes de que te preguntes vos, te respondo yo</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>¿Necesito experiencia en decoración?<span class="chev"></span></summary>
+        <p class="faq-a">No. Los dos módulos arrancan desde cero: desde cómo hacer el buttercream y el ganache hasta cómo cargar la manga o estirar la pasta. Si ya hacés tortas, te va a resultar todavía más fácil.</p>
+      </details>
+      <details>
+        <summary>¿Cómo recibo los módulos y el acceso a la comunidad?<span class="chev"></span></summary>
+        <p class="faq-a">Apenas se acredita tu pago, te llega un mail con el enlace para descargar el PDF y ver los videos, junto con el acceso a mi grupo de WhatsApp. Podés empezar en minutos, desde el celular o la computadora.</p>
+      </details>
+      <details>
+        <summary>¿Qué módulo me conviene?<span class="chev"></span></summary>
+        <p class="faq-a">Si querés tortas con crema, colores y decoraciones con manga, empezá por Buttercream. Si querés tortas temáticas lisas y con bordes rectos —personajes, camisetas, castillos—, Ganacheado y Forrado. Se complementan muy bien: una torta forrada con detalles en manga queda hermosa. Por eso la promo trae los dos.</p>
+      </details>
+      <details>
+        <summary>¿Qué materiales necesito?<span class="chev"></span></summary>
+        <p class="faq-a">Para buttercream: batidora, una manga (de tela o descartable) y algunos picos; si comprás uno solo, que sea el rizado cerrado grande. Para ganacheado y forrado: espátula, alisador, palote y hojas de cúter. La base giratoria ayuda, pero no es imprescindible. Los ingredientes son de supermercado.</p>
+      </details>
+      <details>
+        <summary>¿Qué pasa si tengo una duda mientras estoy decorando?<span class="chev"></span></summary>
+        <p class="faq-a">Me escribís por WhatsApp y te respondo: me podés mandar fotos y, si hace falta, hacemos una videollamada. Con la compra también entrás a mi grupo de WhatsApp.</p>
+      </details>
+      <details>
+        <summary>¿Es seguro pagar acá?<span class="chev"></span></summary>
+        <p class="faq-a">Sí. La compra se procesa a través de Shopify, una de las plataformas de pago más usadas y seguras del mundo para tiendas online.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="band-maroon final-cta">
+  <svg class="leaf bl" style="color:var(--blush)"><use href="#leaf-motif"></use></svg>
+  <div class="wrap">
+    <p class="eyebrow on-maroon" style="text-align:center;">Último paso</p>
+    <h2>Tus tortas ya son ricas. Ahora hacé que se vean de vidriera.</h2>
+    <p class="lede on-maroon center">Empezá hoy con las mismas técnicas que Gi usa en Tortas Don Pastel hace más de 20 años.</p>
+    <a href="#precios" class="btn btn-primary">Elegir mi opción</a>
+    <p class="fine-print">Pago único · acceso inmediato · procesado de forma segura por Shopify.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">Tortas Don Pastel — Decoración de Tortas</div>
+    <div><a href="https://www.instagram.com/tortasdonpastel?stkn=MTI4dGhxdmIzcGZreA==" target="_blank" rel="noopener noreferrer" style="color:var(--cream); text-decoration:underline;">@tortasdonpastel</a> · Producto digital comercializado a través de Shopify</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/542262641549" target="_blank" rel="noopener noreferrer" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<div id="exit-popup" class="exit-overlay" role="dialog" aria-modal="true" aria-labelledby="exit-title" hidden>
+  <div class="exit-modal">
+    <button type="button" class="exit-close" aria-label="Cerrar">✕</button>
+    <p class="eyebrow" style="text-align:center;">Esperá un segundo</p>
+    <h2 id="exit-title" style="font-size:var(--h3);">¿Te vas sin empezar?</h2>
+    <p class="lede center" style="margin-top:10px;">Llevando los dos módulos pagás <b data-price="promo">$ —</b> y te regalo el bono Cookies y Cupcakes Decorados.</p>
+    <a href="#precios" class="btn btn-primary btn-block js-exit-cta">Ver la promo</a>
+    <p class="fine-print">PDF + videos + comunidad de WhatsApp incluidos.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ---------- Precios y variantes de Shopify (completar acá) ---------- */
+  var SHOP_CART = 'https://ra1eta-js.myshopify.com/cart/';
+  var PRODUCTS = {
+    buttercream: { name: 'Decoración con Buttercream',          variant: '67973082448101', price: 9900 },
+    ganacheado:  { name: 'Ganacheado y Forrado',                variant: '67973093097701', price: 9900 },
+    promo:       { name: 'Promo Buttercream + Ganacheado y Forrado', variant: '67973065703653', price: 14900 }
+  };
+  var BUMPS = {
+    redes:  { variant: '67589463408869', price: 4500 },
+    tortas: { variant: '67973486018789', price: 4500 }
+  };
+
+  function formatARS(n){ return (typeof n === 'number') ? '$' + n.toLocaleString('es-AR') : '$ —'; }
+  function isVariant(v){ return /^\d+$/.test(v || ''); }
+
+  var sum = (PRODUCTS.buttercream.price !== null && PRODUCTS.ganacheado.price !== null)
+    ? PRODUCTS.buttercream.price + PRODUCTS.ganacheado.price : null;
+  var save = (sum !== null && PRODUCTS.promo.price !== null) ? sum - PRODUCTS.promo.price : null;
+  var priceText = {
+    buttercream: PRODUCTS.buttercream.price, ganacheado: PRODUCTS.ganacheado.price, promo: PRODUCTS.promo.price,
+    sum: sum, save: save, redes: BUMPS.redes.price, tortas: BUMPS.tortas.price
+  };
+  document.querySelectorAll('[data-price]').forEach(function(el){
+    el.textContent = formatARS(priceText[el.getAttribute('data-price')]);
+  });
+
+  /* ---------- Opción elegida + bump offers: total en vivo + link de compra ---------- */
+  var buyBtn = document.getElementById('main-buy-btn');
+  var radios = document.querySelectorAll('input[name="product"]');
+  var bumpChecks = document.querySelectorAll('.bump-check');
+  var offerTotal = document.getElementById('offer-total');
+  var saveNote = document.getElementById('save-note');
+  var bumpNote = document.getElementById('bump-total-note');
+  var bumpValue = document.getElementById('bump-total-value');
+  var current = { key: 'promo', total: null };
+
+  function update(){
+    var key = document.querySelector('input[name="product"]:checked').value;
+    var product = PRODUCTS[key];
+    var total = product.price;
+    var cartParts = isVariant(product.variant) ? [product.variant + ':1'] : [];
+    var anyChecked = false;
+
+    bumpChecks.forEach(function(chk){
+      if(!chk.checked) return;
+      anyChecked = true;
+      var bump = BUMPS[chk.value];
+      total = (total !== null && bump.price !== null) ? total + bump.price : null;
+      if(isVariant(bump.variant)) cartParts.push(bump.variant + ':1');
+    });
+
+    offerTotal.textContent = formatARS(product.price);
+    saveNote.hidden = (key !== 'promo');
+    buyBtn.textContent = 'Comprar ahora' + (total !== null ? ' — ' + formatARS(total) : '');
+    buyBtn.href = isVariant(product.variant) ? SHOP_CART + cartParts.join(',') : '#precios';
+    if(bumpNote && bumpValue){
+      bumpNote.hidden = !anyChecked;
+      bumpValue.textContent = formatARS(total);
+    }
+    current = { key: key, total: total };
+  }
+
+  radios.forEach(function(r){ r.addEventListener('change', update); });
+  bumpChecks.forEach(function(chk){ chk.addEventListener('change', update); });
+  update();
+
+  /* ---------- Meta Pixel: InitiateCheckout en el botón de compra ---------- */
+  buyBtn.addEventListener('click', function(){
+    if(typeof fbq === 'function' && current.total !== null){
+      fbq('track', 'InitiateCheckout', {
+        value: current.total,
+        currency: 'ARS',
+        content_name: PRODUCTS[current.key].name
+      });
+    }
+  });
+
+  /* ---------- Pop-up de salida ---------- */
+  var EXIT_KEY = 'deco_exit_shown';
+  var popup = document.getElementById('exit-popup');
+  if(popup){
+    function openPopup(){
+      try{ if(sessionStorage.getItem(EXIT_KEY)) return; sessionStorage.setItem(EXIT_KEY, '1'); }catch(e){}
+      popup.hidden = false;
+      document.body.style.overflow = 'hidden';
+    }
+    function closePopup(){
+      popup.hidden = true;
+      document.body.style.overflow = '';
+    }
+    popup.querySelector('.exit-close').addEventListener('click', closePopup);
+    popup.querySelector('.js-exit-cta').addEventListener('click', closePopup);
+    popup.addEventListener('click', function(e){ if(e.target === popup) closePopup(); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !popup.hidden) closePopup(); });
+
+    document.addEventListener('mouseout', function(e){
+      if(!e.relatedTarget && e.clientY <= 0) openPopup();
+    });
+
+    var isTouch = matchMedia('(pointer:coarse)').matches;
+    if(isTouch){ setTimeout(openPopup, 45000); }
+  }
+
+  /* ---------- Video: se reproduce en silencio cuando aparece en pantalla ---------- */
+  var salesVideo = document.getElementById('sales-video');
+  if(salesVideo && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ salesVideo.play().catch(function(){}); }
+        else if(salesVideo.muted){ salesVideo.pause(); }
+      });
+    }, { threshold: 0.5 }).observe(salesVideo);
+  }
+  var unmuteBtn = document.getElementById('unmute-btn');
+  if(salesVideo && unmuteBtn){
+    unmuteBtn.addEventListener('click', function(){
+      salesVideo.muted = false;
+      salesVideo.currentTime = 0;
+      salesVideo.play().catch(function(){});
+    });
+    salesVideo.addEventListener('volumechange', function(){ unmuteBtn.hidden = !salesVideo.muted; });
+  }
+})();
+</script>
+
+</body>
+</html>
